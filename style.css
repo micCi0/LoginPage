@@ -1,0 +1,96 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Default Setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+/* Body */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("./background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.login{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem 4rem;
+    border-radius: 15px;
+    width: 410px;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+}
+.login h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.login-box{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.login-box-input input{
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+.login-box-input input:focus{
+    background: rgba(255, 255, 255, 0.3);  
+}
+.login-box-input label{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.login-box-input label#password{
+    top: 50%;
+}
+i{
+    position: absolute;
+    top: 20%;
+    left: 10px;
+}
+i#change{
+  left: 85%;
+}
+input[type = "email"]:focus~label,
+input[type = "password"]:focus~label{
+    top: 8px;
+    font-size: 11px;
+}
+input[type = "checkbox"]{
+    margin: 0 0 25px;
+    accent-color: #000;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    background: #ff7e5f;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 0 10px;
+}
+a{
+    color: #ff7e5f;
+    text-decoration: none;
+}
